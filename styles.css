@@ -1,0 +1,30 @@
+body {
+  background-image: url('public/8379.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+nav {
+  margin-bottom: 10px;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+.nav-wrapper {
+  background-color: #4DBD33;
+}
+
+.card {
+  margin: 5px;
+  padding: 10px;
+}
+
+.projectHeading {
+  display: block;
+  font-size: 20px;
+}

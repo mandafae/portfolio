@@ -1,30 +1,79 @@
 body {
-  background-image: url('public/8379.jpg');
+  background-image: url('public/joel-filipe-191303.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: 'Roboto', sans-serif;
 }
 
-nav {
-  margin-bottom: 10px;
+a {
+  color: #000000;
 }
 
-main {
-    flex: 1 0 auto;
-  }
+a:hover {
+  color: #00CDCD;
+}
+
+.large-icons {
+  font-size: 20pt;
+}
+
+.container {
+  align-items: center;
+  justify-content: center;
+}
 
 .nav-wrapper {
-  background-color: #4DBD33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #FFFFFF;
+  opacity: 0.75;
+  margin: 0px 0px 10px 0px;
+  font-size: 16pt;
+}
+
+.footer-wrapper {
+  height: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #FFFFFF;
+  opacity: 0.75;
+}
+
+.nav-button {
+  border: none;
 }
 
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  border: 1px #000000 solid;
+  width: 90%;
   margin: 5px;
   padding: 10px;
 }
 
+.headshot {
+  height: 250px;
+  padding: 2px;
+  border: 5px #000000 solid;
+  border-radius: 100%;
+}
+
+.project {
+  width: 50%;
+}
+
 .projectHeading {
-  display: block;
   font-size: 20px;
+  font-weight: bold;
 }

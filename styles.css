@@ -9,12 +9,24 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+main {
+  flex: 1 0 auto;
+}
+
 a {
   color: #000000;
 }
 
 a:hover {
   color: #00CDCD;
+  text-decoration: none;
+}
+
+hr {
+  display: block;
+  width: 90%;
+  height: 2px;
+  color: #000000;
 }
 
 .large-icons {
@@ -41,6 +53,7 @@ a:hover {
 .footer-wrapper {
   height: 20px;
   width: 100%;
+  margin-top: 10px;
   text-align: center;
   background-color: #FFFFFF;
   opacity: 0.75;
@@ -48,6 +61,17 @@ a:hover {
 
 .nav-button {
   border: none;
+}
+
+.nav-button:hover {
+  color: #00CDCD;
+  cursor: pointer;
+}
+
+.nav-button:active,
+.nav-button:focus,
+.nav-button.active {
+  outline: none;
 }
 
 .card {
@@ -58,7 +82,7 @@ a:hover {
   border-radius: 5px;
   border: 1px #000000 solid;
   width: 90%;
-  margin: 5px;
+  margin: auto;
   padding: 10px;
 }
 
@@ -76,4 +100,16 @@ a:hover {
 .projectHeading {
   font-size: 20px;
   font-weight: bold;
+}
+
+#intro {
+  height: 75vh;
+}
+
+#projects {
+  display: none;
+}
+
+#about {
+  display: none;
 }

@@ -13,9 +13,9 @@
     <nav>
       <div class="container-fluid nav-wrapper">
         <div class="row align-items-center justify-content-end">
-          <button class="nav-button"><a href="projects.html">Projects</a></button>
-          <button class="nav-button"><a href="about.html">About/Contact</a></button>
-          <button class="nav-button"><a href="public/aFreemanResume.pdf">Resumé</a></button>
+          <button class="nav-button" onclick="clickProjects()">Projects</button>
+          <button class="nav-button" onclick="clickAbout()">About/Contact</button>
+          <button class="nav-button"><a href="public/aFreemanResume.pdf" target="_blank">Resumé</a></button>
         </div>
       </div>
   </nav>
@@ -24,7 +24,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col align-self-center">
-            <div class="card">
+            <div class="card" id="intro">
               <img class="headshot" src="public/headshot.jpg" alt="headshot">
               <h2 style="font-family:'Montserrat Alternates', sans-serif;">Amanda Freeman</h2>
               <h5>Software Engineer</h5>
@@ -32,7 +32,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container" id="projects">
         <div class="row align-items-center">
           <div class="col align-self-center">
             <div class="card">
@@ -40,26 +40,26 @@
                 <h4>Projects</h4>
               </div>
               <div class="row align-items-center">
-                <div class="project col-12 col-lg-6 align-self-center">
+                <div class="project col-12 col-lg-6">
                   <p class="projectHeading">Recipeers</p>
-                  <p><a href="http://recipeers.herokuapp.com/"><img src="public/icons8-heroku-50.png" height="20"></a> <a href="https://github.com/mandafae/Recipeers"><i class="fa fa-github" aria-hidden="true"></i></a></p>
-                  <p>A social media platform for sharing recipes with friends. Built in a week on a team of four people.</p>
+                  <p><a href="http://recipeers.herokuapp.com/" target="_blank"><img src="public/icons8-heroku-50.png" height="20"></a> <a href="https://github.com/mandafae/Recipeers" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+                  <p>A full-stack social media app for sharing recipes with friends. Built in a week on a team of four people.</p>
                   <p>Technologies Used: PostgreSQL, Knex, Node, Express, Javascript, HTML, CSS</p>
                   <img src="public/recipeers.png" height="250">
                 </div>
-                <div class="project col-12 col-lg-6 align-self-center">
+                <div class="project col-12 col-lg-6">
                   <p class="projectHeading">WellMinder</p>
-                  <p><a href="https://github.com/mandafae/WellMinder2"><i class="fa fa-github" aria-hidden="true"></i></a>  <a href="https://medium.com/@mandafae"><i class="fa fa-rss" aria-hidden="true"></i></a>  <a href="#" onclick="window.open('video.html', 'movieWindow', 'height=615, width=975, statusbar=no, toolbar=no, menubar=no, scrollbars=no, resizable=yes')"><i class="fa fa-video-camera" aria-hidden="true"></i></a></p>
+                  <p><a href="https://github.com/mandafae/WellMinder2" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>  <a href="https://medium.com/@mandafae" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a>  <a href="#" onclick="window.open('video.html', 'movieWindow', 'height=615, width=975, statusbar=no, toolbar=no, menubar=no, scrollbars=no, resizable=yes')"><i class="fa fa-video-camera" aria-hidden="true"></i></a></p>
                   <p>A full-stack holistic wellness tracking app that "gamifies" wellness. Created in a week on a team of three people.</p>
                   <p>Technologies Used: React, D3, Firebase, Javascript, HTML, CSS</p>
                   <img src="public/WMpreview.png" height="250">
                 </div>
               </div>
               <div class="row align-items-center">
-                <div class="project col-12 col-lg-6 align-self-center">
+                <div class="project col-12 col-lg-6">
                   <p class="projectHeading">DogGO</p>
-                  <p><a href="https://github.com/mandafae/Q1_Project"><i class="fa fa-github" aria-hidden="true"></i></a></p>
-                  <p>A frontend app for finding dog-friendly bars and restaurants near you. This was a solo project, was built in a week, and was my first full app built with Javascript.</p>
+                  <p><a href="https://github.com/mandafae/Q1_Project" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></p>
+                  <p>A front-end app for finding dog-friendly restaurants and bars near you. Solo project, built in a week, and my first full app built with Javascript.</p>
                   <p>Technologies Used: Javascript, HTML, CSS, jQuery, AJAX, Yelp & Google API's</p>
                   <img src="public/doggo1.png" height="250">
                 </div>
@@ -68,15 +68,27 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container" id="about">
       <div class="row align-items-center">
         <div class="col align-self-center">
           <div class="card">
             <div class="row align-items-center">
               <h4>About Me</h4>
             </div>
+            <div class="row">
+              <div class="col-12 col-lg-8" style="text-align:right;">
+                <p>Born and raised in Austin, I've acquired several tattoos and have a passion for craft beer and tacos; I even named my dog Taco! In my free time, I love finding cool dog-friendly places to hang out with my pup, whipping up fun recipes from my favorite food blogs, and binge-watching anime.</p>
+                <p>I first got into coding as a teenager when I discovered <a href="https://en.wikipedia.org/wiki/Kisekae_Set_System" target="_blank">kisekae</a> or KiSS dolls (paperdolls for your computer). I started making KiSS dolls and soon realized I enjoyed the coding part of the process much more than the drawing part. When my favorite KiSS resource became a paid site, I decided to teach myself HTML and start building my own websites to house my dolls. The KiSS community died, but my love of coding remained, and when the opportunity for a career change came up, web development was a natural choice.</p>
+              </div>
+              <div class="col-12 col-lg-4" style="text-align:center;">
+                <img class="headshot" src="public/headshot.jpg" alt="headshot">
+              </div>
+            </div>
+            <hr>
             <div class="row align-items-center">
               <h4>Contact</h4>
+            </div>
+            <div class="row align-items-center">
               <p class="large-icons"><a href="mailto:mandafae5@gmail.com?subject=I%20saw%20your%20portfolio!"><i class="fa fa-envelope" aria-hidden="true"></i></a> | <a href="https://www.linkedin.com/in/mandafae5/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a> | <a href="https://github.com/mandafae" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></p>
             </div>
           </div>
